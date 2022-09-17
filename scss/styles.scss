@@ -1,7 +1,7 @@
 //styles
-@import '_normalise';
-@import '_header';
-@import '_footer';
+@import './components/normalise';
+@import './components/header';
+@import './components/footer';
 body {
   background-color: tomato;
   font-size: 1000px;
