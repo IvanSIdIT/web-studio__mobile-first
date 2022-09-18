@@ -1,8 +1,13 @@
+//common
+@import './common/root';
+//reset
+@import './base/normalise';
+@import './base/reset';
 //styles
-@import '_normalise';
-@import './components/header';
-@import './components/footer';
-body {
-  background-color: tomato;
-  font-size: 1000px;
-}
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/what-we-do';
+@import './layout/team';
+@import './layout/customers';
+@import './layout/footer';
