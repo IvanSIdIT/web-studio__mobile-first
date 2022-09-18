@@ -335,11 +335,81 @@ h1 {
     display: none;
   }
 }
+.team-wrapper {
+  background-color: var(--secondary-bg-color);
+}
+
 .team {
   max-width: 480px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 60px 15px;
+  background-color: var(--secondary-bg-color);
 }
 .team__title {
   text-align: center;
+  margin: 0 0 30px 0;
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+}
+.team__img {
+  display: block;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.card {
+  margin: 0 0 30px 0;
+  background-color: var(--primary-bg-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding: 0 0 25px 0;
+}
+.card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  margin: 0 0 10px 0;
+}
+.card__job {
+  font-size: 16px;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 15px 0;
+}
+.card__socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card__socials {
+  margin: 0 10px 0 0;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__socials:last-child {
+  margin-right: 0;
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=styles.css.map */
