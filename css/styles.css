@@ -227,6 +227,27 @@ h1 {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 800px) {
+  [class*=__container] {
+    max-width: 480px;
+    margin: 0px auto;
+    padding: 15px 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  [class*=__container] {
+    width: 800px;
+    margin: 0px auto;
+    padding: 15px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  [class*=__container] {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 15px 0;
+  }
+}
 .header__pc-menu {
   display: none;
 }
@@ -294,8 +315,6 @@ h1 {
 }
 
 .advantages {
-  max-width: 480px;
-  margin: 0 auto;
   padding: 30px 15px 60px;
 }
 .advantages__title {
@@ -340,8 +359,6 @@ h1 {
 }
 
 .team {
-  max-width: 480px;
-  margin: 0 auto;
   padding: 60px 15px;
   background-color: var(--secondary-bg-color);
 }
@@ -361,6 +378,7 @@ h1 {
 }
 
 .card {
+  max-width: 450px;
   margin: 0 0 30px 0;
   background-color: var(--primary-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -412,4 +430,17 @@ h1 {
 
 .card:last-child {
   margin-bottom: 0;
+}
+
+.customers {
+  padding: 60px 15px;
+}
+.customers__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.7em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  margin: 0 0 30px 0;
 }/*# sourceMappingURL=styles.css.map */

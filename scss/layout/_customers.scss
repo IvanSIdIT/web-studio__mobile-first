@@ -1,0 +1,12 @@
+.customers {
+  padding: 60px 15px;
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.7em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-title-color);
+    margin: 0 0 30px 0;
+  }
+}
