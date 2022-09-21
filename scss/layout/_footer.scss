@@ -2,7 +2,45 @@
   background-color: var(--third-bg-color);
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__company-name {
   color: var(--primary-bg-color);
-  text-align: center;
+
+  padding: 0 0 20px 0;
+  display: inline-block;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__link {
+    color: var(--primary-bg-color);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    font-family: 'Roboto';
+    text-align: center;
+    font-style: normal;
+  }
+
+  &_item {
+    font-family: 'Roboto';
+  }
+
+  &__item:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+
+  &__item:not(:first-child) {
+    opacity: 60%;
+  }
 }

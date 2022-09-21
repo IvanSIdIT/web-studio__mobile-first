@@ -243,21 +243,21 @@ h1 {
   [class*=__container] {
     max-width: 480px;
     margin: 0px auto;
-    padding: 15px 0;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 800px) {
   [class*=__container] {
     width: 800px;
     margin: 0px auto;
-    padding: 15px 0;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   [class*=__container] {
     width: 1200px;
     margin: 0px auto;
-    padding: 15px 0;
+    padding: 0 15px;
   }
 }
 .header__pc-menu {
@@ -278,6 +278,27 @@ h1 {
 .header__company-name {
   margin: 0 15px 0 0;
   color: var(--secondary-title-color);
+}
+.header__mob-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.icon-cross {
+  display: none;
+}
+
+.header__mob-menu.is-open .icon-menu {
+  display: none;
+}
+
+.header__mob-menu.is-open .icon-cross {
+  display: block;
 }
 
 .hero-wrapper {
@@ -453,7 +474,55 @@ h1 {
   background-color: var(--third-bg-color);
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__company-name {
   color: var(--primary-bg-color);
+  padding: 0 0 20px 0;
+  display: inline-block;
+}
+
+.adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.adress__link {
+  color: var(--primary-bg-color);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  font-family: "Roboto";
   text-align: center;
+  font-style: normal;
+}
+.adress_item {
+  font-family: "Roboto";
+}
+.adress__item:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.adress__item:not(:first-child) {
+  opacity: 60%;
 }/*# sourceMappingURL=styles.css.map */

@@ -12,4 +12,23 @@
     margin: 0 15px 0 0;
     color: var(--secondary-title-color);
   }
+  &__mob-menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.icon-cross {
+  display: none;
+}
+
+.header__mob-menu.is-open .icon-menu {
+  display: none;
+}
+
+.header__mob-menu.is-open .icon-cross {
+  display: block;
 }
