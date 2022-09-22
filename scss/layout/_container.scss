@@ -1,4 +1,4 @@
-@media screen and (max-width: '800px') {
+@media screen and (max-width: '768px') {
   [class*='__container'] {
     max-width: 480px;
     margin: 0px auto;
@@ -6,9 +6,9 @@
   }
 }
 
-@media screen and (min-width: '800px') {
+@media screen and (min-width: '768px') {
   [class*='__container'] {
-    width: 800px;
+    width: 768px;
     margin: 0px auto;
     padding: 0 15px;
   }
