@@ -419,10 +419,19 @@ h1 {
   color: var(--primary-bg-color);
   max-width: 200px;
   margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
 }
 
 .advantages {
   padding: 30px 15px 60px;
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 30px 0px 60px;
+  }
 }
 .advantages__title {
   display: none;
@@ -437,8 +446,20 @@ h1 {
   display: block;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .advantages__item {
   padding: 30px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: calc((100% - 60px) / 2);
+    margin: 0 15px;
+  }
 }
 .advantages__description h3 {
   font-weight: 700;
