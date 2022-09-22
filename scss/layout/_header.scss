@@ -1,14 +1,18 @@
 .header__pc-menu {
   display: none;
+  @media screen and (min-width: '800px') {
+    display: block;
+  }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 480px;
-  margin: 0 auto;
+
   padding: 15px;
   &__company-name {
+    align-self: center;
+
     margin: 0 15px 0 0;
     color: var(--secondary-title-color);
   }
@@ -19,6 +23,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    @media screen and (min-width: '800px') {
+      display: none;
+    }
   }
 }
 

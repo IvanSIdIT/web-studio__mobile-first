@@ -263,6 +263,11 @@ h1 {
 .header__pc-menu {
   display: none;
 }
+@media screen and (min-width: 800px) {
+  .header__pc-menu {
+    display: block;
+  }
+}
 
 .header {
   display: -webkit-box;
@@ -271,11 +276,11 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 480px;
-  margin: 0 auto;
   padding: 15px;
 }
 .header__company-name {
+  -ms-flex-item-align: center;
+      align-self: center;
   margin: 0 15px 0 0;
   color: var(--secondary-title-color);
 }
@@ -288,6 +293,11 @@ h1 {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .header__mob-menu {
+    display: none;
+  }
 }
 
 .icon-cross {
