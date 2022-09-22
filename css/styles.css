@@ -287,6 +287,7 @@ h1 {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .icon-cross {
@@ -299,6 +300,14 @@ h1 {
 
 .header__mob-menu.is-open .icon-cross {
   display: block;
+}
+
+.icon-cross:hover path {
+  fill: var(--accent-color);
+}
+
+.icon-menu:hover path {
+  fill: var(--accent-color);
 }
 
 .hero-wrapper {

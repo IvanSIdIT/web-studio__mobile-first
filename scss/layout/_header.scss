@@ -18,6 +18,7 @@
     padding: 0;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 }
 
@@ -31,4 +32,12 @@
 
 .header__mob-menu.is-open .icon-cross {
   display: block;
+}
+
+.icon-cross:hover path {
+  fill: var(--accent-color);
+}
+
+.icon-menu:hover path {
+  fill: var(--accent-color);
 }
