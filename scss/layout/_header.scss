@@ -1,20 +1,24 @@
 .header__pc-menu {
   display: none;
   @media screen and (min-width: '800px') {
-    display: block;
+    display: flex;
   }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-
+  @media screen and (min-width: '800px') {
+    justify-content: flex-start;
+  }
   padding: 15px;
   &__company-name {
     align-self: center;
-
     margin: 0 15px 0 0;
     color: var(--secondary-title-color);
+    @media screen and (min-width: '800px') {
+      margin: 0 90px 0 0;
+    }
   }
   &__mob-menu {
     display: inline-flex;
@@ -27,8 +31,37 @@
       display: none;
     }
   }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: 0 85px 0 0;
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: var(--primary-title-color);
+  }
+  &__item:not(:last-child) {
+    margin: 0 50px 0 0;
+  }
+}
+
+//////button styles
 .icon-cross {
   display: none;
 }
