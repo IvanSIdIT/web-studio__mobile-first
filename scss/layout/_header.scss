@@ -34,10 +34,7 @@
   display: block;
 }
 
+.icon-menu:hover path,
 .icon-cross:hover path {
-  fill: var(--accent-color);
-}
-
-.icon-menu:hover path {
   fill: var(--accent-color);
 }
