@@ -19,7 +19,9 @@
 
   &__list {
     @media screen and (min-width: '768px') {
-      flex-wrap: nowrap;
+      display: flex;
+
+      flex-wrap: wrap;
     }
   }
 
@@ -28,6 +30,7 @@
 
     @media screen and (min-width: '768px') {
       width: calc((100% - 4 * 15px) / 2);
+
       margin: 0 15px;
     }
   }
