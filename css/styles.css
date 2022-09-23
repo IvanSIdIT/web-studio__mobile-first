@@ -508,6 +508,18 @@ h1 {
   margin: 0 0 30px 0;
 }
 @media screen and (min-width: 768px) {
+  .team__img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__img-tab {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+}
+@media screen and (min-width: 768px) {
   .team__List {
     display: -webkit-box;
     display: -ms-flexbox;
