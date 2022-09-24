@@ -3,3 +3,14 @@
     display: none;
   }
 }
+
+.what-we-do {
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2em;
+    color: var(--primary-title-color);
+    letter-spacing: 0.03em;
+  }
+}

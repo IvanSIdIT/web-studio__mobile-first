@@ -286,6 +286,11 @@ h1 {
           justify-content: space-between;
   padding: 15px;
 }
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     -webkit-box-pack: start;
@@ -364,6 +369,12 @@ h1 {
 .contacts__item:hover {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+}
 
 .navigation {
   display: -webkit-box;
@@ -441,6 +452,12 @@ h1 {
   line-height: 1.6em;
   margin: 0 0 30px 0;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4em;
+  }
+}
 .hero__button {
   padding: 10px 30px;
   background-color: var(--accent-color);
@@ -496,11 +513,16 @@ h1 {
     margin: 0 15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: calc((100% - 120px) / 4);
+    margin: 0 15px;
+  }
+}
 .advantages__description h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15em;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-title-color);
@@ -517,6 +539,15 @@ h1 {
     display: none;
   }
 }
+.what-we-do__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2em;
+  color: var(--primary-title-color);
+  letter-spacing: 0.03em;
+}
+
 .team-wrapper {
   background-color: var(--secondary-bg-color);
 }
