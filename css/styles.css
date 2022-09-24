@@ -234,6 +234,12 @@ h1 {
   letter-spacing: 0.03em;
   font-family: "Raleway";
 }
+@media screen and (min-width: 1200px) {
+  .company-name {
+    font-size: 26px;
+    line-height: 1.1em;
+  }
+}
 
 .web {
   color: var(--accent-color);
@@ -298,6 +304,11 @@ h1 {
     margin: 0 90px 0 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__company-name {
+    margin: 0 95px 0 0;
+  }
+}
 .header__mob-menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -322,9 +333,25 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .contacts__item:not(:last-child) {
   margin: 0 0 10px 0;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin: 0 30px 0 0;
+  }
 }
 
 .contacts__item {
@@ -364,6 +391,11 @@ h1 {
 }
 .navigation__item:not(:last-child) {
   margin: 0 50px 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin: 0 305px 0 0;
+  }
 }
 
 .icon-cross {
