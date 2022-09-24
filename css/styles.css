@@ -539,6 +539,9 @@ h1 {
     display: none;
   }
 }
+.what-we-do {
+  padding: 0 0 95px 0;
+}
 .what-we-do__title {
   text-align: center;
   font-weight: 700;
@@ -546,6 +549,18 @@ h1 {
   line-height: 1.2em;
   color: var(--primary-title-color);
   letter-spacing: 0.03em;
+  margin: 0 0 50px 0;
+}
+.what-we-do__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.what-we-do__item:not(:last-child) {
+  margin: 0 30px 0 0;
 }
 
 .team-wrapper {
