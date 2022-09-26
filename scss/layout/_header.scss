@@ -5,6 +5,29 @@
   }
 }
 
+.header-wrapper {
+  position: relative;
+}
+// .header__mob-menu.is-open .header__mobile-menu {
+//   display: block;
+// }
+.header__mobile-menu {
+  background-color: aqua;
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  height: 200px;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.is-open {
+    display: block;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
