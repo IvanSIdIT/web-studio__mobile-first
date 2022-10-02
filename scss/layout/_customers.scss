@@ -23,6 +23,8 @@
       display: block;
       border: 1px solid #afb1b8;
       border-radius: 4px;
+      margin: 15px;
+      width: 100%;
     }
   }
 
@@ -42,6 +44,10 @@
       &:nth-child(3) {
         margin-right: 30px;
       }
+    }
+
+    @media screen and (max-width: '767px') {
+      width: calc((100% - 2 * 30px) / 2);
     }
   }
 

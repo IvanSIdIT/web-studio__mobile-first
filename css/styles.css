@@ -740,6 +740,8 @@ h1 {
     display: block;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    margin: 15px;
+    width: 100%;
   }
 }
 .customers__item {
@@ -754,6 +756,11 @@ h1 {
 @media screen and (min-width: 1200px) {
   .customers__item:nth-child(3) {
     margin-right: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .customers__item {
+    width: calc((100% - 60px) / 2);
   }
 }
 .customers__list {
