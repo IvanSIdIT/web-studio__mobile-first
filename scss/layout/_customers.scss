@@ -10,6 +10,21 @@
     margin: 0 0 30px 0;
   }
 
+  &__mob {
+    display: none;
+    @media screen and (max-width: '767px') {
+      display: block;
+    }
+  }
+
+  &__link {
+    @media screen and (max-width: '767px') {
+      padding: 16px 52px;
+      display: block;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+    }
+  }
   &__item {
     margin-right: 30px;
     &:nth-child(3),
