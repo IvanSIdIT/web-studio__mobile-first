@@ -13,16 +13,17 @@
   &__mob {
     display: none;
     @media screen and (max-width: '767px') {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
     }
   }
 
   &__link {
     @media screen and (max-width: '767px') {
-      padding: 16px 52px;
+      // padding: 16px 52px;
       display: block;
-      border: 1px solid #afb1b8;
-      border-radius: 4px;
       margin: 15px;
       width: 100%;
     }
@@ -48,6 +49,9 @@
 
     @media screen and (max-width: '767px') {
       width: calc((100% - 2 * 30px) / 2);
+      height: 90px;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
     }
   }
 

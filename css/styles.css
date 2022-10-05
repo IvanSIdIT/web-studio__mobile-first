@@ -731,15 +731,21 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   .customers__mob {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
   .customers__link {
-    padding: 16px 52px;
     display: block;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
     margin: 15px;
     width: 100%;
   }
@@ -761,6 +767,9 @@ h1 {
 @media screen and (max-width: 767px) {
   .customers__item {
     width: calc((100% - 60px) / 2);
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
   }
 }
 .customers__list {
