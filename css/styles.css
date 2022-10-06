@@ -498,6 +498,7 @@ h1 {
   color: var(--primary-bg-color);
   max-width: 200px;
   margin: 0 auto;
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 2em;
@@ -625,6 +626,11 @@ h1 {
   width: 100%;
   margin: 0 0 30px 0;
 }
+@media screen and (min-width: 1200px) {
+  .team__img-tab {
+    height: 270px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team__List {
     display: -webkit-box;
@@ -692,9 +698,23 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 100%;
+}
+.card__socials:hover path {
+  fill: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.card__socials:hover {
+  background-color: var(--accent-color);
 }
 .card__socials:last-child {
   margin-right: 0;
+}
+
+.card__link {
+  height: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -800,7 +820,7 @@ h1 {
 .customers__tab {
   display: none;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers__tab {
     display: block;
   }
