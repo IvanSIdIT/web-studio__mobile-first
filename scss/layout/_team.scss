@@ -77,12 +77,6 @@
     justify-content: center;
   }
   &__socials {
-    margin: 0 10px 0 0;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &:hover path {
       fill: white;
     }
@@ -91,13 +85,21 @@
       background-color: var(--accent-color);
       transition: 0.2s;
     }
-
-    border-radius: 100%;
   }
 
   &__socials:last-child {
     margin-right: 0;
   }
+}
+
+.socails__common {
+  margin: 0 10px 0 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
 }
 
 .card__link {

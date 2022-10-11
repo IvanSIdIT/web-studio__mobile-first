@@ -686,22 +686,9 @@ h1 {
           justify-content: center;
 }
 .card__socials {
-  margin: 0 10px 0 0;
-  width: 45px;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  border-radius: 100%;
 }
 .card__socials:hover path {
   fill: white;
@@ -714,6 +701,22 @@ h1 {
 }
 .card__socials:last-child {
   margin-right: 0;
+}
+
+.socails__common {
+  margin: 0 10px 0 0;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
 }
 
 .card__link {
@@ -913,4 +916,13 @@ h1 {
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.join__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.join__item {
+  background-color: #fff;
+  opacity: 10%;
 }/*# sourceMappingURL=styles.css.map */

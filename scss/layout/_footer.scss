@@ -55,4 +55,13 @@
     text-align: center;
     letter-spacing: 0.03em;
   }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    background-color: #fff;
+    opacity: 10%;
+  }
 }
