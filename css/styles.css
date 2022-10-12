@@ -928,6 +928,7 @@ h1 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -983,6 +984,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .join__item {
   background-color: rgba(255, 255, 255, 0.1);
