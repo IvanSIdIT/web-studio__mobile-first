@@ -988,6 +988,14 @@ h1 {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (min-width: 1200px) {
+  .testron {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .mailing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,14 +1004,6 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-@media screen and (min-width: 1200px) {
-  .mailing {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 .mailing__title {
   margin-bottom: 20px;
@@ -1014,6 +1014,11 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__title {
+    text-align: start;
+  }
 }
 .mailing__input {
   width: 100%;
@@ -1034,12 +1039,14 @@ h1 {
 @media screen and (min-width: 1200px) {
   .mailing__input {
     width: 368px;
+    margin-right: 10px;
   }
 }
 .mailing__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
 }
 .mailing__icon {
   -webkit-box-align: center;
