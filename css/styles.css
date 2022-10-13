@@ -245,7 +245,7 @@ h1 {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   [class*=__container] {
     max-width: 480px;
     margin: 0px auto;

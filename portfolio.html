@@ -1,0 +1,90 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <!-- Favicon -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <div class="header-wrapper">
+      <header class="header header__container">
+        <a href="index.html" class="header__company-name company-name link">
+          <span class="web">Web</span>Studio</a
+        >
+        <button
+          type="button"
+          class="header__mob-menu"
+          aria-label="Переключател мобильного меню"
+          data-menu-button
+        >
+          <svg
+            class="icon-cross"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"
+              fill="#212121"
+            />
+          </svg>
+
+          <svg
+            class="icon-menu"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <div class="header__pc-menu">
+          <nav class="header__navigation navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link link">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link link">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__contacts contacts">
+            <a href="" class="contacts__item link">info@devstudio.com</a>
+            <a href="" class="contacts__item link">+38 096 111 11 11</a>
+          </div>
+        </div>
+        <div class="header__mobile-menu" data-menu-button>
+          <span>Hello world!</span>
+        </div>
+      </header>
+    </div>
+  </body>
+  <script src="./js/monile-menu.js"></script>
+</html>
