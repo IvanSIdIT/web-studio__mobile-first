@@ -1,0 +1,6 @@
+@mixin text($s, $w, $ls, $lh) {
+  font-size: $s;
+  font-weight: $w;
+  letter-spacing: $ls;
+  line-height: $lh;
+}
