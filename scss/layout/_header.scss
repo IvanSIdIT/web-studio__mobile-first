@@ -9,9 +9,7 @@
   position: relative;
   border-bottom: 1px solid #ececec;
 }
-// .header__mob-menu.is-open .header__mobile-menu {
-//   display: block;
-// }
+
 .header__mobile-menu {
   display: none;
   @media screen and (max-width: '768px') {
