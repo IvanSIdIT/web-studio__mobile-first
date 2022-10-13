@@ -279,6 +279,7 @@ h1 {
 
 .header-wrapper {
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__mobile-menu {
