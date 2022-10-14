@@ -1092,4 +1092,11 @@ h1 {
 .selection__button:hover {
   color: #fff;
   background-color: var(--accent-color);
+}
+
+.products__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 36px;
 }/*# sourceMappingURL=styles.css.map */
