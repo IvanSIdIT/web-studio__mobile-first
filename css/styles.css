@@ -1099,4 +1099,9 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 36px;
+  color: var(--primary-title-color);
+}
+.products__description {
+  font-size: 16px;
+  line-height: 30px;
 }/*# sourceMappingURL=styles.css.map */

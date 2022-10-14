@@ -4,3 +4,8 @@
   letter-spacing: $ls;
   line-height: $lh;
 }
+
+@mixin text_default($s, $lh) {
+  font-size: $s;
+  line-height: $lh;
+}

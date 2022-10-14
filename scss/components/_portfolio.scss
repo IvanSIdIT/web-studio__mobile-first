@@ -28,5 +28,10 @@
 .products {
   &__title {
     @include text(18px, 700, 0.06em, 36px);
+    color: var(--primary-title-color);
+  }
+
+  &__description {
+    @include text_default(16px, 30px);
   }
 }
