@@ -8,7 +8,9 @@
 .selection {
   display: flex;
   flex-wrap: wrap;
-
+  @media screen and (min-width: '768px') {
+    justify-content: center;
+  }
   &__item {
     margin: 0 10px 15px 0;
   }
@@ -26,30 +28,45 @@
 }
 
 .products {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 25px;
   &__title {
     @include text(18px, 700, 0.06em, 36px);
     color: var(--primary-title-color);
     margin: 0 0 5px 25px;
+    @media screen and (min-width: '768px') and (max-width: '1199px') {
+      &:nth-child(2) {
+        width: 290px;
+      }
+    }
   }
 
   &__item {
+    margin-bottom: 30px;
     border: 1px solid #eeeeee;
-    @media screen and (min-width: '768px') {
-      width: 355px;
-      margin-right: 15px;
+    @media screen and (min-width: '768px') and (max-width: '1199px') {
+      width: calc((100% - 2 * 15px) / 2);
+
+      &:not(:last-child) {
+        margin: 0 15px 30px 0;
+      }
+      &:nth-child(even) {
+        margin: 0 0 30px 15px;
+      }
     }
-    &:not(:last-child) {
-      margin: 0 15px 30px 0;
-    }
-    &:nth-child(even) {
-      margin: 0 0 0 15px;
+
+    @media screen and (min-width: '1200px') {
+      margin: 0 15px 30px;
+      width: calc((100% - 3 * 30px) / 3);
     }
   }
 
   &__img {
     width: 100%;
     margin: 0 0 25px 0;
+
+    height: 295px;
   }
 
   &__description {
