@@ -5,6 +5,14 @@
   }
 }
 
+.active::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
 .header-wrapper {
   position: relative;
   border-bottom: 1px solid #ececec;
