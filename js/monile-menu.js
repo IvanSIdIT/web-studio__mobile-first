@@ -29,3 +29,9 @@ const menuBtnRef = document.querySelector('[data-menu-button]');
 menuBtnRef.addEventListener('click', () => {
   menuBtnRef.classList.toggle('is-open');
 });
+
+const menuBtnRek = document.querySelector('[data-menu-dutton]');
+
+menuBtnRek.addEventListener('click', () => {
+  menuBtnRek.classList.toggle('is-ope');
+});

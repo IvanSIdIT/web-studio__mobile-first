@@ -281,6 +281,14 @@ h1 {
   }
 }
 
+.active::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
 .header-wrapper {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -511,6 +519,14 @@ h1 {
   letter-spacing: 0.06em;
   max-width: 200px;
   margin: 0 auto;
+}
+
+.js {
+  display: none;
+}
+
+.hero__button.is-ope .js {
+  display: inline-block;
 }
 
 .advantages {

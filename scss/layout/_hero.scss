@@ -42,3 +42,11 @@
   max-width: 200px;
   margin: 0 auto;
 }
+
+.js {
+  display: none;
+}
+
+.hero__button.is-ope .js {
+  display: inline-block;
+}
