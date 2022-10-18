@@ -1,16 +1,9 @@
 .header__pc-menu {
   display: none;
+
   @media screen and (min-width: '768px') {
     display: flex;
   }
-}
-
-.active::aft {
-  content: '';
-  width: 100%;
-  height: 5px;
-  background: var(--accent-color);
-  border-radius: 2px;
 }
 
 .header-wrapper {
@@ -109,6 +102,7 @@
   display: flex;
   align-items: center;
   margin: 0 85px 0 0;
+
   &__list {
     display: flex;
   }
@@ -119,6 +113,7 @@
     letter-spacing: 0.02em;
     font-weight: 500;
     color: var(--primary-title-color);
+
     &:hover {
       color: var(--accent-color);
     }
@@ -129,6 +124,28 @@
   @media screen and (min-width: '1200px') {
     margin: 0 305px 0 0;
   }
+}
+
+.active {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+
+  left: 0;
+
+  @media screen and (min-width: '1200px') {
+    bottom: -33px;
+  }
+  bottom: -29px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 //////button styles
