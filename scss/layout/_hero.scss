@@ -1,5 +1,23 @@
 .hero-wrapper {
-  background-color: var(--third-bg-color);
+  // background: var(--third-bg-color);
+  background-blend-mode: multiply;
+
+  @media screen and (max-width: '767px') {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-bg_mob.png) no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: '768px') and (max-width: '1199px') {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-bg_tab.png) no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: '1200px') {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-bg_pc.png) no-repeat;
+    background-size: cover;
+  }
 }
 
 .hero {

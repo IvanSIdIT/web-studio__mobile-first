@@ -504,7 +504,31 @@ h1 {
 }
 
 .hero-wrapper {
-  background-color: var(--third-bg-color);
+  background-blend-mode: multiply;
+}
+@media screen and (max-width: 767px) {
+  .hero-wrapper {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg_mob.png) no-repeat;
+    background: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_mob.png) no-repeat;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_mob.png) no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-wrapper {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg_tab.png) no-repeat;
+    background: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_tab.png) no-repeat;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_tab.png) no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-wrapper {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg_pc.png) no-repeat;
+    background: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_pc.png) no-repeat;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg_pc.png) no-repeat;
+    background-size: cover;
+  }
 }
 
 .hero {
